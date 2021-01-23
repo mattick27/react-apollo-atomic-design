@@ -1,8 +1,8 @@
 import React from "react";
-import Homepage from './pages/homepage'
 
 import WriteAndReadQuery from './pages/homepage/example1/WriteAndReadQuery'
 import SubscriptionQuery from './pages/homepage/example2/SubscriptionQuery'
+import ChainSelect from './pages/homepage/example3/ChainSelect'
 
 import { InMemoryCache, ApolloClient, ApolloProvider } from '@apollo/client';
 import { Switch, Route } from 'react-router-dom';
@@ -16,8 +16,8 @@ function App() {
         <Switch>
           <Route exact path="/WriteAndReadQuery" component={WriteAndReadQuery} />
           <Route exact path="/SubscriptionQuery" component={SubscriptionQuery} />
-          <Route exact path="/example3" component={WriteAndReadQuery} />
-          <Route exact path="/" component={Homepage} />
+          <Route exact path="/ChainSelect" component={ChainSelect} />
+          <Route exact path="/" component={WriteAndReadQuery} />
         </Switch>
       </ApolloProvider>
     </BrowserRouter>
