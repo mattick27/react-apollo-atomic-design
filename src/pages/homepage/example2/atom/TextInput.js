@@ -18,7 +18,6 @@ function TextInput() {
         }]
       }
     })
-
   }
   return (
     <input onChange={handleChangeText}></input>
